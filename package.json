@@ -1,0 +1,30 @@
+{
+  "name": "w9-express-products-api",
+  "version": "1.0.0",
+  "description": "API daftar produk sederhana menggunakan ExpressJS dan TypeScript tanpa database",
+  "main": "dist/src/server.js",
+  "scripts": {
+    "start": "tsx src/server.ts",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start:prod": "node dist/src/server.js",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/products.test.ts"
+  },
+  "keywords": [
+    "express",
+    "rest-api",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
